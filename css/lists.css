@@ -1,22 +1,29 @@
 .movie-list {
     margin: 10px 40px;
 }
-
+/* override bootstrap default */
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th, .table>tbody+tbody {
+    border-top: none !important;
+    
+}
 #movie-table {
-    /* margin: 10px 20px; */
-    background-color: rgb(85, 96, 143, 0.5);
     color: black;
+    border-collapse: separate;
+    /* border-style: hidden !important; */
 }
 th {
     text-align: center;
 }
- #table-body {
-     text-align: center;
-     color: #fff;
+.list-item {
+    text-align: center;
+    background-color: rgba(81, 94, 153, 0.3);
 }
-#table-body td{
-    padding: 5px;
+.list-table-data {
+    color:#fff;
 }
-#table-body tr:hover {
-    background-color: rgb(85, 96, 143) 
+.list-item tr:hover {
+    background-color: rgb(79, 93, 153, 0.5) 
+}
+.table-spacing {
+    margin-top: 3px;
 }

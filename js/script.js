@@ -3,14 +3,17 @@ var tableData = [{'Genre': ['Mystery', 'Thriller'], 'Liked': ['Shawn'], 'Rating'
 buildTable(tableData)
 
 function buildTable(data) {
-    var table = document.getElementById('table-body')
+    var table = document.getElementById('movie-table')
     for (i in data){
-        var row = `<tr>
-                    <td>${data[i].Title}</td>
-                    <td>${data[i].Runtime}</td>
-                    <td>${data[i].Genre}</td>
-                    <td>${data[i].Rating}</td>
-                </tr>`
+        var row = `<div class="table-spacing"></div>
+                    <tbody class="list-item">
+                        <tr class="list-table-data">
+                            <td>${data[i].Title}</td>
+                            <td>${data[i].Runtime}</td>
+                            <td>${data[i].Genre}</td>
+                            <td>${data[i].Rating}</td>
+                        </tr>
+                    </tbody>`
         table.innerHTML += row
     }
 }

@@ -70,7 +70,7 @@ h1>#text-primary {
 #nav-list a {
   margin:0 15px ;
   font-size: 16px;
-  color:rgba(255,255,255);
+  color:rgba(255,255,255,0.7);
 }
 .nav-link {
   text-transform: uppercase;
@@ -95,4 +95,7 @@ h1>#text-primary {
 .nav-link:hover:after { 
   width: 100%; 
   left: 0; 
+}
+.nav-link:hover {
+  color: rgb(255, 255, 255) !important;
 }
