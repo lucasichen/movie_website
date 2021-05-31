@@ -1,4 +1,22 @@
-#movie-list {
-    background-color: #55608f;
-    color: white;
+.movie-list {
+    margin: 10px 40px;
+}
+
+#movie-table {
+    /* margin: 10px 20px; */
+    background-color: rgb(85, 96, 143, 0.5);
+    color: black;
+}
+th {
+    text-align: center;
+}
+ #table-body {
+     text-align: center;
+     color: #fff;
+}
+#table-body td{
+    padding: 5px;
+}
+#table-body tr:hover {
+    background-color: rgb(85, 96, 143) 
 }
