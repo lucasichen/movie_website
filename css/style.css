@@ -21,10 +21,11 @@ nav {
 #header-nav {
   border-radius: 0;
   border: 0;
-  background: black;
-  opacity:.9; 
+  background: rgba(0,0,0,0.7);
 }
-
+h1>#text-primary {
+  color: blue;
+}
 #logo-img {
   background: url('../images/movie-nightmd.png') no-repeat;
   width: 100px;
@@ -41,7 +42,7 @@ nav {
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px rgb(128, 128, 128);
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 2;
@@ -52,6 +53,7 @@ nav {
 /* for underline length */
 .nav>li>a {
   padding: 10px 5px;
+  /* color: rgba(255, 255, 255, 0.7) !important; */
 }
 #nav-list {
   margin-top: 33.75px;
@@ -68,8 +70,8 @@ nav {
 }
 #nav-list a {
   margin:0 15px ;
-  color: white;
   font-size: 16px;
+  color:rgba(255,255,255,0.7);
 }
 .nav-link {
   text-transform: uppercase;
@@ -78,9 +80,10 @@ nav {
   display: inline-block;
   position: relative;
 }
-.nav-link:after {    
-  background: none repeat scroll 0 0 transparent;
+.nav-link:after { 
+  /* background: none repeat scroll 0 0 transparent; */
   bottom: 0;
+  color: #fff;
   content: "";
   display: block;
   height: 1px;
