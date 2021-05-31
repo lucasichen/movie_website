@@ -1,5 +1,13 @@
+/*     BACKGROUND
+Change the direct image link in parenthesis to change the image.*/
+body {
+    background: rgb(193, 221, 233) repeat-x center/contain fixed;
+    font: 11px Open Sans; color: #ccc;
+}
 .movie-list {
-    margin: 10px 40px;
+    width: 700px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 /* override bootstrap default */
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th, .table>tbody+tbody {
@@ -8,21 +16,19 @@
 }
 #movie-table {
     color: black;
-    border-collapse: separate;
-    /* border-style: hidden !important; */
 }
 th {
     text-align: center;
 }
-.list-item {
+tbody.list-item {
     text-align: center;
     background-color: rgba(81, 94, 153, 0.3);
 }
+tbody.list-item tr:hover {
+    background-color: rgb(79, 93, 153, 0.5) 
+}
 .list-table-data {
     color:#fff;
-}
-.list-item tr:hover {
-    background-color: rgb(79, 93, 153, 0.5) 
 }
 .table-spacing {
     margin-top: 3px;

@@ -3,8 +3,9 @@
 }
 body {
   font-size: 16px;
-  background-color: rgb(66, 66, 66);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* background-color: rgb(66, 66, 66); */
+  background: rgb(193, 221, 233) repeat-x center/contain fixed;
+  font: 11px Open Sans; color: #ccc;
 }
 /* To leave nav bar always at top */
 nav {
