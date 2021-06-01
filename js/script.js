@@ -1,5 +1,6 @@
 var tableData = {"12345":{'Genre': ['Mystery', 'Thriller'], 'Liked': ['Shawn'], 'Rating': 8.5, 'Runtime': 112, 'Seen': ['Shawn'], 'Title': 'Rear Window'},
  "3456":{'Genre': ['Crime', 'Drama'], 'Rating': 9.0, 'Runtime': 96, 'Title': '12 Angry Men'}}
+
 buildTable(tableData)
 
 function buildTable(table_data) {
@@ -15,7 +16,5 @@ function buildTable(table_data) {
                         </tr>
                     </tbody>`
         table.innerHTML += row
-        // println(data[i]['Title'])
     }
 }
-

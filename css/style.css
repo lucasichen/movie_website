@@ -37,8 +37,8 @@ h1>#text-primary {
 .navbar-brand {
   padding-top: 25px;
 }
-
-.navbar-brand h1 { /* Webname */
+ /* Webname */
+.navbar-brand h1 {
   color: white;
   font-size: 1.5em;
   text-transform: uppercase;
