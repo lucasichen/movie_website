@@ -1,5 +1,4 @@
-# movie_website
-
+# MyMovieGroup
 Website commits are found under the branch: gh-pages
 To launch the site, open the environment then open deployment
 
