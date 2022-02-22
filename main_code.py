@@ -407,8 +407,13 @@ def movieRatingsHL():
 
 # ------TESTING AREA------ #
 # Read google sheets
-SPREADSHEET_ID, service, values = read_database('Movies!A1:O657')
+# SPREADSHEET_ID, service, values = read_database('Movies!A1:O657')
 
 # print(values)
-database = Sheet(values)
+# database = Sheet(values)
 # print(database.movies_data)
+cred = credentials.Certificate("firebasekey.json")
+firebase_admin.initialize_app(cred, {'databaseURL' : 'https://movie-database-d01fd-default-rtdb.firebaseio.com/'})
+ref = db.reference('/group1')
+movieDatabase = ref.get()
+print(movieDatabase)

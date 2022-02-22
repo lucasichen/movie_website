@@ -1,0 +1,56 @@
+/*     BACKGROUND */
+/* body {
+    background: rgb(193, 221, 233) repeat-x center/contain fixed;
+    font: 11px Open Sans !important;
+    color: #ccc;
+} */
+/*Change the direct image link in parenthesis to change the image.*/
+.table-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 10%;
+    z-index: 1;
+}
+.movie-list {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+}
+/* override bootstrap default */
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th, .table>tbody+tbody {
+    border-top: none !important;
+    font-size: 11px;
+    padding: 8px 20px 8px 20px ;
+}
+#movie-table {
+    color: black;
+    /* background-color: (0,0,0,0.7); */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+tbody#table-item {
+    background-color: rgba(241, 241, 241, 0.5) ;
+}
+td{
+ max-width: 350px;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ }
+th {
+    text-align: center;
+}
+tbody.list-item {
+    text-align: center;
+    background-color: rgba(81, 94, 153, 0.3);
+}
+tbody.list-item tr:hover {
+    background-color: rgb(79, 93, 153, 0.5) ;
+}
+.list-table-data {
+    color:#fff;
+}
+.table-spacing {
+    margin-top: 3px;
+}
