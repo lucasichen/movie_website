@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lists.css') }}">
+{% endblock %}
+{% block title %}
+movielist
+{% endblock %}
+{% block content %}
+<div class="table-container">
+    <div class="movie-list">
+        <table class="table" id="movie-table">
+            <tbody id="table-item">
+                <tr class="bg-info">
+                    <th>Title</th>
+                    <th>Runtime</th>
+                    <th>Genre</th>
+                    <th>Rating</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+<script src="{{ url_for('static',filename='js/table.js') }}"></script>
+<script>
+    buildTable({{movieDatabase|tojson}})
+</script>
+{% endblock %}
